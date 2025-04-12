@@ -84,12 +84,12 @@ Give you a useReducer + Context API project template?🤔
 ```
 src/
 ├── context/
-│   └── GlobalState.js
+│   └── GlobalState.jsx
 ├── components/
-│   ├── Login.js
-│   └── UserInfo.js
-├── App.js
-└── index.js
+│   ├── Login.jsx
+│   └── UserInfo.jsx
+├── App.jsx
+└── index.jsx
 ```
 ## ✅ What This Template Gives You
 - Global state without Redux
@@ -97,44 +97,4 @@ src/
 - Easy to scale: add more actions, handle loading, errors, etc.
 - Works in both small and medium-large apps
 
-
-Show how useReducer and Redux Toolkit can work side-by-side in large apps?
-
-Great ask, Ankit! 🤝 In **large-scale apps**, you can use **Redux Toolkit (RTK)** for global app-wide state and `**useReducer**` for **component-level localized state**.
-
-This **hybrid model** gives you:
-
-- 🧠 Centralized power of Redux for core data (auth, user, cart, etc.)
-- 💡 Lightweight `useReducer`  for isolated, reusable components
----
-
-## 🧠 Use Case Example
-Let’s say you’re building an **eCommerce App**.
-
-| Feature | State Scope | Tool to Use |
-| ----- | ----- | ----- |
-| User login/logout | App-wide (global) | **Redux Toolkit** |
-| Product filters (price, brand) | Component-level |  |
-| Cart items | Global | **Redux Toolkit** |
-| Modal toggles / Wizards | Local to UI components |  |
----
-
-## 🔧 1. Project Setup
-```bash
-npm install @reduxjs/toolkit react-redux
-```
-### 🗂 Structure
-```
-src/
-├── app/
-│   └── store.js
-├── features/
-│   ├── userSlice.js
-│   └── cartSlice.js
-├── components/
-│   ├── FilterPanel.js (uses useReducer)
-│   └── ProductList.js (uses Redux)
-└── App.js
-```
-
-
+## 👉 we'll explain Redux in next post
